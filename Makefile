@@ -14,6 +14,7 @@ SOURCES = $(wildcard src/*.cpp)
 OBJECTS = $(addprefix build/, $(notdir $(SOURCES:.cpp=.o)))
 
 all: $(TARGET)
+
 # Compilação
 $(TARGET): $(OBJECTS)
 	$(CXX) $(OBJECTS) -o build/$(TARGET)
@@ -25,4 +26,4 @@ clean:
 	rm -f build/*.o build/$(TARGET)
 
 run:
-	./build/$(TARGET)
+	./build/$(TARGET) $(ARGS)

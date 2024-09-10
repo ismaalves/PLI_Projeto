@@ -15,7 +15,7 @@ Solution* perturbacao(const Solution* solucao, InstanceData* dados) {
 
     int num_rotas = new_solution->routes.size();
 
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i < 20; i++) {
         int rota_idx = rand() % num_rotas;
         
         // Certifica que a rota tem pelo menos 2 clientes (excluindo o depósito)
@@ -49,7 +49,7 @@ Solution* ils(Solution* initial_solution, InstanceData* dados) {
     Solution* S = vnd(initial_solution, dados);  // Aplica VND na solução inicial
     int cont = 0;
 
-    while(cont <= 1000) {
+    while(cont <= 10) {
         
         Solution* S1 = vnd(perturbacao(S, dados), dados); //Combina vnd e perturbação
 
