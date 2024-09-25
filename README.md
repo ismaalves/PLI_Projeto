@@ -1,4 +1,4 @@
-Projeto Final - Análise e Projetos de Algoritmos
+Projeto Final - Análise e Projetos de Algoritmos e Programação Linear Inteira
 
 Alunos/autores: 
 
