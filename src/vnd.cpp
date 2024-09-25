@@ -19,15 +19,15 @@ Solution* best_neighbor(const Solution* current_solution, InstanceData* instance
     switch (key) {
         case 1:
             //cout << "N1" << endl;
-            SwapIntra(neighbor_solution, instanceData);  // Altera a solução vizinha
+            Reinsertion(neighbor_solution, instanceData);  // Altera a solução vizinha
             break;
         case 2:
             //cout << "N2" << endl;
-            SwapInter(neighbor_solution, instanceData);  // Altera a solução vizinha
+            remove(neighbor_solution, instanceData);  // Altera a solução vizinha
             break;
         case 3:
             //cout << "N3" << endl;
-            Reinsertion(neighbor_solution, instanceData);  // Altera a solução vizinha
+            SwapIntra(neighbor_solution, instanceData);  // Altera a solução vizinha
             break;
         case 4:
             //cout << "N4" << endl;
@@ -35,7 +35,7 @@ Solution* best_neighbor(const Solution* current_solution, InstanceData* instance
             break;
         case 5:
             //cout << "N5" << endl;
-            remove(neighbor_solution, instanceData);  // Altera a solução vizinha
+            SwapInter(neighbor_solution, instanceData);  // Altera a solução vizinha
             break;
         default:
             // Caso não haja uma chave correspondente, retorna a cópia não alterada
