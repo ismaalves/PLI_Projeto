@@ -32,3 +32,28 @@ A partir da solução inicial, é realizado um processo de busca exaustiva com o
 
 Aqui a ideia principal é se beneficiar das vantagens do Iterated Local Search (ILS) e do Variable Neighborhood Descent (VND). O loop se inicia com a perturbação da solução da busca exaustiva (passo anterior), selecionando aleatoriamente a vizinhança que fará a perturbação (respeitando as restrições de viabilidade da solução), depois essa solução perturbada é melhorada pelo VND, e o processo se repete até X execuções sem melhora.
 
+## INSTRUÇÕES PARA A EXECUÇÃO
+
+### PASSO 1
+
+Faça download do repositório:
+
+```bash
+git clone https://github.com/ismaalves/PLI_Projeto.git
+```
+
+### PASSO 2
+
+Compile todos os arquivos de código:
+
+```bash
+mingw32-make
+```
+
+### PASSO 3
+
+Adicione o arquivo .txt com a instância do problema na pasta Inputs e execute:
+
+```bash
+mingw32-make run ARGS="sua_instancia"
+```
