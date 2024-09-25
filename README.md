@@ -1,5 +1,10 @@
 Projeto Final - Análise e Projetos de Algoritmos
-Alunos/autores: Ismael Alves Lima / Julyanna Azevedo / Ruy de Morais e Silva
+
+Alunos/autores: 
+
+* Ismael Alves Lima
+* Julyanna Azevedo
+* Ruy de Morais e Silva
 
 # PROBLEMA DE ROTEAMENTO DE VEÍCULOS COM TERCEIRIZAÇÃO
 
@@ -9,7 +14,14 @@ Seja $G = (V, A)$ um grafo orientado onde $V = {0, 1, . . ., n}$ é o conjunto d
 
 ## ABORDAGEM DE SOLUÇÃO
 
+Para a resolução do problema em questão, foi adotado o seguinte procedimento:
+
+* Construção de uma solução inicial (K-NN);
+* Busca exaustiva na vizinhança da solução (VND);
+* Combinação de perturbação da solução com busca exaustiva (ILS+VND).
+
 ##
+
 > ALGORITMO GULOSO
 
 A ideia principal do algoritmo é sempre escolher o vizinho mais próximo do vértice atual, ou seja, a aresta de menor valor, até que todos os vértices sejam visitados ou as condições preestabelecidas sejam atingidas.
