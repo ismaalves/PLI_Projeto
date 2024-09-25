@@ -20,11 +20,9 @@ Para a resolução do problema em questão, foi adotado o seguinte procedimento:
 * Busca exaustiva na vizinhança da solução (VND);
 * Combinação de perturbação da solução com busca exaustiva (ILS+VND).
 
-##
+### SOLUÇÃO INICIAL
 
-> ALGORITMO GULOSO
-
-A ideia principal do algoritmo é sempre escolher o vizinho mais próximo do vértice atual, ou seja, a aresta de menor valor, até que todos os vértices sejam visitados ou as condições preestabelecidas sejam atingidas.
+Para a construção da solução inicial implementamos um algoritmo guloso, a saber, o K-Nearest Neighbors. A ideia principal do algoritmo é sempre escolher o vizinho mais próximo do vértice atual, ou seja, a aresta de menor valor, até que todos os vértices sejam visitados ou as condições preestabelecidas sejam atingidas. Com isso, é possível iniciar a resolução do problema a partir de uma solução viável.
 
 > CONSTRUTOR DA SOLUÇÃO
 
